@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11080d">
+    <meta name="description" content="رسالة اعتذار من القلب إلى تهجد ❤️">
+    <title>إلى تهجد، من كل گلبي ❤️</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="ambient ambient--one" aria-hidden="true"></div>
+      <div class="ambient ambient--two" aria-hidden="true"></div>
+      <section class="scene" aria-label="رسالة إلى تهجد">
+        <div class="eyebrow">رسالة صغيرة من گلبي</div>
+
+        <article class="question-card" id="question-card">
+          <div class="heart-seal" aria-hidden="true">♥</div>
+          <p class="title-name">تهجد</p>
+          <h1 class="question-title">تسامحيني؟ 🥺</h1>
+          <p class="question-hint">كل اللي أريده فرصة أحچي لج من گلبي.</p>
+          <div class="choice-row">
+            <button class="button button--yes" id="yes-button" type="button">Yes ❤️</button>
+            <button class="button button--no" id="no-button" type="button">No 🙄</button>
+          </div>
+          <p class="gentle-message" id="gentle-message" aria-live="polite"></p>
+          <p class="signature-note">بكل هدوء… خذي وقتج 🤍</p>
+        </article>
+
+        <article class="apology" id="apology" aria-labelledby="apology-title" aria-hidden="true">
+          <h2 class="apology-heading" id="apology-title" tabindex="-1">تهجد ❤️</h2>
+          <div class="apology-copy" id="apology-copy">
+            <p class="apology-line" data-reveal>أدري يمكن زعلتج، ويمكن اللي صار ضايقج، بس والله ما كان قصدي أزعّلج أو أجرحج.</p>
+            <p class="apology-line apology-line--petname" data-reveal>اعشقج مولاتي ❤️</p>
+            <p class="apology-line apology-line--petname" data-reveal>احبج يروحي 🥺❤️</p>
+            <p class="apology-line apology-line--petname" data-reveal>بزونتي الكيوت 😼❤️</p>
+            <p class="apology-line apology-line--petname" data-reveal>بنيتي 😼❤️</p>
+            <p class="apology-line" data-reveal>آسف عل اللي صار، مو قصدي والله 😞</p>
+            <p class="apology-line" data-reveal>ما أريد أشوفج زعلانة مني، ولا أريد يكون بيناتنا شي يضوجج. يمكن أخطأت، ويمكن خانني التعبير، بس الشي الوحيد اللي متأكد منه إنج غالية عليه كلش.</p>
+            <p class="apology-line" data-reveal>إنتِ مو شخص عابر بحياتي، إنتِ الإنسانة اللي أحب أشوفها تضحك، وأكره أشوفها زعلانة بسببي.</p>
+            <p class="apology-line apology-line--heart" data-reveal>فـ إذا أگدر أطلب منج شي واحد... <span class="pulsing-heart" aria-label="قلب كبير">❤️</span> سامحيني ❤️</p>
+            <p class="apology-line apology-line--ending" data-reveal>أحبج تهجد، وأعتذر منج من كل گلبي ❤️🥺</p>
+          </div>
+
+          <section class="music-panel" aria-label="مشغل الأغنية">
+            <button class="music-toggle" id="play-toggle" type="button" aria-label="تشغيل الأغنية" aria-pressed="false">▶</button>
+            <div class="music-meta">
+              <p class="music-title">أغنيتنا الصغيرة</p>
+              <p class="music-note" id="audio-note">اضغطي تشغيل حتى تسمعينها</p>
+            </div>
+            <div class="seek-row">
+              <span id="elapsed-time">0:00</span>
+              <label class="sr-only" for="audio-seek">تقديم أو تأخير الأغنية</label>
+              <input class="seek" id="audio-seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="موضع الأغنية">
+              <span id="total-time">0:00</span>
+            </div>
+          </section>
+
+          <div class="music-actions">
+            <button class="button button--soft" id="replay-button" type="button">أعيدي الأغنية 🎵</button>
+            <button class="button button--soft" id="from-heart-button" type="button">من قلبي ❤️</button>
+          </div>
+          <p class="final-message" id="final-message" aria-live="polite"></p>
+          <button class="back-link" id="back-button" type="button">ارجعي للسؤال</button>
+        </article>
+
+        <!-- ضع ملف الأغنية الحقيقي song.mp3 في هذا المجلد بجانب index.html. -->
+        <audio id="song" src="song.mp3" preload="none"></audio>
+        <div class="sr-only" id="live-status" aria-live="polite" aria-atomic="true"></div>
+      </section>
+    </main>
+  </body>
+</html>
